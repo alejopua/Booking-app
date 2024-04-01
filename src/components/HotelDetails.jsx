@@ -1,6 +1,7 @@
 import { useQuery } from '@tanstack/react-query'
 import { useRoute } from 'wouter'
 import { Typography, Card, CardMedia, CardContent, CardActions } from '@mui/material'
+import ReservationForm from './ReservationForm'
 
 const fetchHotel = async (id) => {
   const res = await fetch(`http://localhost:3001/hotels/${id}`)
@@ -31,7 +32,7 @@ export const HotelDetails = () => {
         <Typography variant="body2" color="text.secondary">{hotel.description}</Typography>
       </CardContent>
       <CardActions>
-        {/* form */}
+        <ReservationForm hotel={hotel} />
       </CardActions>
     </Card>
   )
