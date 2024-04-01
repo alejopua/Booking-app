@@ -3,7 +3,7 @@ import { Typography, Input, Button } from '@mui/material'
 import useStore from "../store";
 import toast from 'react-hot-toast' 
 
-export const ReservationForm = () => {
+export const ReservationForm = ({hotel}) => {
   const { register, handleSubmit, formState: {errors} } = useForm()
   const addReservation = useStore((state) => state.addReservation)
 
@@ -13,7 +13,7 @@ export const ReservationForm = () => {
   }
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
-      <Input type="date" { ...register("StartDate", { required: true })} />
+      <Input type="date" { ...register("startDate", { required: true })} />
       { errors.startDate && (<Typography color='red'>Start date is required</Typography>) }
       <br />
 
