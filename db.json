@@ -1,0 +1,34 @@
+{
+  "hotels": [
+    {
+      "id": 1,
+      "name": "Hotel Sunshine",
+      "description": "A luxurious hotel with stunning views of the ocean.",
+      "image": "/img/hotel1.webp"
+    },
+    {
+      "id": 2,
+      "name": "Mountain Retreat Inn",
+      "description": "Escape to nature in our cozy mountain lodge.",
+      "image": "/img/hotel2.webp"
+    },
+    {
+      "id": 3,
+      "name": "Urban Oasis Hotel",
+      "description": "Experience city living at its finest with us.",
+      "image": "/img/hotel3.webp"
+    },
+    {
+      "id": 4,
+      "name": "Tranquil Garden Resort",
+      "description": "Find peace and serenity in our lush garden resort.",
+      "image": "/img/hotel4.webp"
+    },
+    {
+      "id": 5,
+      "name": "Riverside Lodge",
+      "description": "Stay by the river and enjoy the calming sounds of nature.",
+      "image": "/img/hotel5.webp"
+    }
+  ]
+}
